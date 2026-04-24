@@ -27,7 +27,7 @@ You MUST return ONLY a valid JSON object exactly like this, no extra text, no ma
 {{"scores": {{"result_relevance": {{"score": 4, "reasoning": "your reason here"}}, "information_completeness": {{"score": 3, "reasoning": "your reason here"}}, "formatting_clarity": {{"score": 4, "reasoning": "your reason here"}}, "actionability": {{"score": 3, "reasoning": "your reason here"}}, "tips_quality": {{"score": 4, "reasoning": "your reason here"}}}}, "overall_score": 4, "summary": "your summary here", "top_strength": "best thing about output", "top_improvement": "what to improve"}}"""
 
     response = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="llama-3.1-8b-instant",
         messages=[
             {
                 "role": "system",
