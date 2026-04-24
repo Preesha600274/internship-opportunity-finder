@@ -3,6 +3,7 @@ Project: Internship Opportunity Finder
 1. Overview
 The system follows a modular, agent-based architecture where each core file performs a specific responsibility. The workflow ensures that user queries are processed, evaluated, and returned as relevant internship opportunities.
 2. Core Components and Responsibilities
+
 🔹 2.1 Orchestrator Agent
 File: agent.py
 Purpose:
@@ -17,6 +18,7 @@ Core Functions:
 Task decomposition
 Workflow management
 Data processing and integration
+
 🔹 2.2 Evaluation and Ranking Agent
 File: judge.py
 Purpose:
@@ -31,6 +33,7 @@ Core Functions:
 Scoring mechanism
 Skill-based matching
 Ranking and filtering logic
+
 🔹 2.3 Backend Controller
 File: app.py
 Purpose:
@@ -45,6 +48,7 @@ Core Functions:
 API handling (request/response cycle)
 Server-side routing
 Integration with backend modules
+
 3. System Workflow
 The user submits a query containing preferences such as skills or domain
 app.py receives and forwards the request to the system
@@ -52,6 +56,7 @@ agent.py analyzes the request and breaks it into manageable tasks
 Relevant internship data is processed and refined
 judge.py evaluates and ranks the results
 The final, sorted list of internships is returned to the user
+
 4. Final Output
 A structured list of internship opportunities
 Ranked based on relevance and user preferences
